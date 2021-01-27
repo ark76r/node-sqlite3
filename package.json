@@ -38,7 +38,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/node-sqlite3.git"
+    "url": "https://github.com/ark76r/node-sqlite3.git"
   },
   "dependencies": {
     "node-addon-api": "^3.0.0",
@@ -65,7 +65,8 @@
     "install": "node-pre-gyp install --fallback-to-build",
     "pretest": "node test/support/createdb.js",
     "test": "mocha -R spec --timeout 480000",
-    "pack": "node-pre-gyp package"
+    "rebuild": "node-pre-gyp rebuild",
+    "pack": "node-pre-gyp package" 
   },
   "license": "BSD-3-Clause",
   "keywords": [
